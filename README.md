@@ -7,7 +7,7 @@
 
 ### 👨‍💻 About Me
 
-I am a Full Stack Developer with 3+ years of experience building scalable web applications. I'm proficient in Python (FastAPI, Flask) and Node.js (Express.js, NestJS) for backend development, and React with TypeScript for the frontend.
+I am a Full Stack Developer with 1+ years of experience building scalable web applications. I'm proficient in Python (FastAPI, Flask) and Node.js (Express.js, NestJS) for backend development, and React with TypeScript for the frontend.
 
 - 🔭 I’m currently working on building robust and scalable backend systems and integrating AI/LLM services.
 - 🌱 I’m currently learning about distributed systems and advanced cloud architectures.
@@ -55,16 +55,3 @@ I am a Full Stack Developer with 3+ years of experience building scalable web ap
 
 ---
 
-### 📊 My GitHub Stats
-
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=seung-waedet&show_icons=true&theme=radical" alt="seung-waedet's GitHub stats" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=seung-waedet&layout=compact&theme=radical" alt="seung-waedet's top languages" />
-  </a>
-</p>
