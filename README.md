@@ -5,7 +5,7 @@ Abuja, Nigeria (UTC+1), working fully remote.
 
 ### Now
 
-I work on [OraScribe](https://orascribe.ai), a transcription and translation platform:
+I work on a transcription and translation platform:
 GPU model serving on serverless GPU platforms (Modal, and RunPod before that), Celery job
 pipelines, billing, and the evals that test them. The code is private; some of the work:
 
