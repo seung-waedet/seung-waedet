@@ -1,57 +1,33 @@
-### Hi there, I'm SEUNG-WA AKPAN 👋
+## Seung-wa Akpan
 
-<a href="https://linkedin.com/in/seungwaakpan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="seungwaakpan" height="30" width="40" /></a>
-<a href="mailto:seungwaakpan@gmail.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/google.svg" alt="seungwaakpan" height="30" width="40" /></a>
+Backend & Applied AI Engineer · Python
+Abuja, Nigeria (UTC+1), working fully remote.
 
----
+### Now
 
-### 👨‍💻 About Me
+Main engineer on [OraScribe](https://orascribe.ai), a transcription and translation platform:
+GPU model serving on serverless GPU platforms (Modal, and RunPod before that), Celery job
+pipelines, billing, and the evals that test them. The code is private; some of the work:
 
-I am a Full Stack Developer with 1+ years of experience building scalable web applications. I'm proficient in Python (FastAPI, Flask) and Node.js (Express.js, NestJS) for backend development, and React with TypeScript for the frontend.
+- Cut LLM cold-start time on staging from 266s to 13-30s in most runs by restoring a saved GPU memory snapshot.
+- Tested Qwen3-4B against M2M100 on 15 idioms before building an LLM translation path behind a flag. Word-for-word mistranslations fell from 11 to at most 1.
+- Found that the voice activity filter was silently dropping sung speech. After the fix, one 8-minute recording went from 120 to 421 transcribed words.
+- Built an eval suite for dropped speech: fast no-GPU tests on every commit, plus a real-GPU run that fails on the old settings.
+- Moved 30-100+ minute GPU jobs off a single long-held connection to a submit, poll and reconcile flow behind a rollback flag.
 
-- 🔭 I’m currently working on building robust and scalable backend systems and integrating AI/LLM services.
-- 🌱 I’m currently learning about distributed systems and advanced cloud architectures.
-- 💬 Ask me about anything related to Python, Node.js, API design, and backend development in general.
-- 📫 How to reach me: **seungwaakpan@gmail.com** or on [LinkedIn](https://linkedin.com/in/seungwaakpan).
+### Public work
 
----
+- [pidgin-deployment-eval](https://github.com/seung-waedet/pidgin-deployment-eval): can LLMs be trusted with everyday tasks in Nigerian Pidgin? In progress: the item schema and checks are built, no model results yet.
+- [document-rag-service](https://github.com/seung-waedet/document-rag-service): a RAG API that ingests PDF, DOCX and TXT files into ChromaDB and answers questions with an LLM. NestJS, LangChain, OpenRouter, Docker.
+- [HP Community](https://hpcommunity.app): two live progressive web apps for a faith community, a companion app (about 25 weekly users) and a reading library with full-text search.
 
-### 🛠️ My Skills
+### Stack
 
-#### Backend
-<p align="left">
-    <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-    <a href="https://fastapi.tiangolo.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" alt="fastapi" width="40" height="40"/> </a>
-    <a href="https://flask.palletsprojects.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg" alt="flask" width="40" height="40"/> </a>
-    <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a>
-    <a href="https://expressjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a>
-</p>
+Python, Flask, FastAPI, Celery, Redis, vLLM, Whisper, PostgreSQL, Docker, pytest.
+Also Node.js, TypeScript, NestJS, MongoDB.
 
-#### Frontend
-<p align="left">
-    <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
-    <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-</p>
+### Contact
 
-#### Databases
-<p align="left">
-    <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
-    <a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a>
-    <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a>
-    <a href="https://redis.io" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a>
-</p>
-
-#### Tools & Platforms
-<p align="left">
-    <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-    <a href="https://git-scm.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" alt="git" width="40" height="40"/> </a>
-    <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-    <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a>
-    <a href="https://www.postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a>
-    <a href="https://www.jestjs.io" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a>
-    <a href="https://docs.pytest.org/en/stable/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pytest/pytest-original.svg" alt="pytest" width="40" height="40"/> </a>
-</p>
-
----
-
+[seungwaakpan.com](https://www.seungwaakpan.com) ·
+[LinkedIn](https://www.linkedin.com/in/seungwaakpan) ·
+seungwaakpan@gmail.com
